@@ -1,11 +1,60 @@
-.container{
+@font-face{
+  font-family: 'Market_Deco';
+  src: url(../font/Market_Deco.ttf);
+}
+@font-face {
+  font-family: 'Timeless';
+  src: url(../font/Timeless.ttf);
+}
+@font-face {
+  font-family: 'Timeless-Bold';
+  src: url(../font/Timeless-Bold.ttf);
+}
+@font-face {
+  font-family: 'AppleGaramond';
+  src: url(../font/apple_garamond/AppleGaramond.ttf);
+}
+@font-face {
+  font-family: 'Orange';
+  src: url(../font/Orange.otf);
+}
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: url(../font/Dosis-Medium.ttf);
+}
+
+.container-edit{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.awal{
+.container-edit-home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 100vh;
+  margin-top: -23px;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading p{
+  margin-top: 10px;
+}
+.logo{
+  font-family: 'Market_Deco';
+}
+.nav-text ul li a{
+  font-family: 'Market_Deco';
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .left{
   margin-right: auto;
@@ -42,3 +91,252 @@
 .paragraf-projects{
   text-align: center;
 }
+h1{
+  display: flex;
+  font-size: 3rem;
+  font-family: 'Market_Deco';
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+/* -------Bagian About--------- */
+#about{
+  padding: 80px 0;
+}
+.row-about{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+.about-col-1 img{
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%;
+}
+.title-head {
+  font-weight: 400;
+  font-family:'Market_Deco';
+}
+.title-para{
+  font-family: 'Dosis-Medium';
+  font-size: 18px;
+}
+.tab-titles{
+display: flex;
+margin: 20px 0 40px;
+font-family: 'Dosis-Medium';
+font-size: 18px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: purple;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px -40px;
+}
+.tab-fix{
+  margin-top: -30px;
+}
+.tab-contents ul li span{
+  color: #51006a;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: 'Dosis-Medium';
+}
+
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+
+}
+/*--------akhir dari bagian about------->
+
+/*--------- awal dari bagian projects--------*/
+#projects{
+  padding: 95px 0;
+}
+.pro-head{
+  display: flex;
+  font-size: 3rem;
+  font-family: 'Market_Deco';
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+}
+.pro-paragraf{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Dosis-Medium';
+  letter-spacing: 1px;
+}
+
+.project-item {
+  background-color: rgba(237, 155, 64, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+ }
+ .project-item:hover {
+  box-shadow: 0 5px 15px -5px #333;
+  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  transform: translateY(-6px);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15); }
+
+ .project-item-wrapper {
+  margin-bottom: 30px; 
+}
+.project-img img {
+  width: 100%;
+  height: 190px;
+  object-fit: fill; 
+}
+.project-text {
+  padding: 15px; 
+}
+.project-title h5 {
+  color: #000; 
+  font-family: 'Dosis-Medium';
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.project-desc{
+  font-size: 1.1rem;
+  font-family: 'Dosis-Medium';
+}
+.project-content img.float-left {
+  margin: 15px 15px 15px 0; }
+
+.project-content .img.float-right {
+  margin: 15px 0 15px 15px; }
+
+
+
+/*--------------- Awal dari Contact------------------*/
+#contact{
+  padding: 80px 0;
+}
+.contact-margin{
+  margin: -150px 0;
+}
+button{
+  background-color: #1f7a8c;
+}
+.text-md-left{
+  font-family: 'Dosis-Medium';
+}
+button:hover{
+  background-color: #00afb5;
+}
+h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+}
+.konten-span{
+  font-family: 'Dosis-Medium';
+}
+.konten-span p{
+  font-size: 1.1rem;
+  font-family: 'Dosis-Medium';
+}
+
+
+/*--------------awal footer------------------*/
+footer{
+  background-color: #984700;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer-container{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Market_Deco';
+}
+.footer-text p{
+  margin-top: 10px;
+  font-family: 'Dosis-Medium';
+  font-size: 1.1rem;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.social-icons a{
+  padding: 10px;
+  margin: 10px;
+}
+.social-icons a i{
+  font-size: 2em; 
+}
+
+.footer-bottom{
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+
+}
+.footer-bottom p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 15px;
+  word-spacing: 3px;
+  color: white;
+  font-family: 'Dosis-Medium';
+}
+
+.footer-bottom p span{
+  font-family: 'Market_Deco';
+  cursor: pointer;
+}
+.footer-bottom span:hover{
+  color: orangered;
+  transition: 0.5s ease-in-out;
+}
+.designer{
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+

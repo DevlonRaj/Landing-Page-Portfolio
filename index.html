@@ -1,257 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Boostrap CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Raj.Dev</title>
-    <style>
-        body {
-            background-color: #ff7700;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23be4338' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a1073d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c44251' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a31f38' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c50c4f' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23a32a3f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b92882' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a31553' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b02285' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23961c6d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a212a4' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%238b3685' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-            background-attachment: fixed;
-            background-size: cover;
-            }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Seorang Web Developer yang berfokus pada Frontend dari Website yang mengarah pada kesuksesan produk secara keseluruhan." />
+  <meta name="author" content="Rajdev Dhillon" />
+  <link rel="shortcut icon" href="assets/image/title.png" type="image/x-icon"> <!-- cek ulang-->
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!--Boostrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5ce8376c23.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #ff7700;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23be4338' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a1073d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c44251' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a31f38' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c50c4f' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23a32a3f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b92882' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a31553' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b02285' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23961c6d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a212a4' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%238b3685' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+  <title>Raj.Dev</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fefae0;">
-            <a class="navbar-brand" href="#">
-                <img src="#"> Raj.Dev </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-    </header>
-    <section id="home">
-      <div class="container">
-        <div class="col-md-8">
-          <h1 class="center">Selamat Datang</h1> 
-          <div class="awal">
-            <p>Front-end Developer</p>
-            <p>Rajdev Dhillon</p>
-           </div> 
-        </div>    
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f7a547;">
+      <a class="navbar-brand logo" href="#">
+        <img src="img/Logo.png" width="45px"> Raj.Dev </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-text" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="container container-edit-home">
+      <div class="row heading">
+        <h1 data-aos="fade-right" data-aos-delay="400" style="font-weight: bolder; font-size: 3rem;" class="center">HI, AKU RAJDEV DHILLON</h1>
+        <p data-aos="fade-left" data-aos-delay="900" style="font-family: 'Timeless'; font-size: 1.5rem; font-weight: 500;">Web developer yang berfokus pada frontend <br>
+          Membangun Website yang mengarah pada keindahan&kesuksesan produk secara keseluruhan.</p>
+
+      </div>
+
     </div>
-    </section>
 
-<!--Awal dari About-->
+  </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="center2">
-          <div class="col-md-8">
-            <h1 class="bottom" style="font-weight: bold;">About Me</h1> 
-            <div class="row">
-              <p class="bawah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto quis tempore laboriosam nisi cupiditate ex hic iusto nemo, eligendi explicabo soluta at consequuntur. Eius modi ex inventore corrupti ratione.</p>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Kenalan</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint voluptatibus illum accusantium, mollitia recusandae, officiis labore cum alias, dolore nihil at odit culpa. Corporis veritatis modi cumque possimus enim!</p>
-                      <a href="contact" class="btn btn-primary">Contact</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Skills</h5>
-                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex reprehenderit illo labore neque distinctio quis, quibusdam eos sequi minus facilis perspiciatis tempore soluta minima asperiores fugiat aperiam dolorem velit nemo.</p>
-                      <a href="projects" class="btn btn-primary">projects</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>   
+  <section id="about">
+    <div class="container">
+      <div class="row row-about">
+        <div class="about-col-1" data-aos="fade-right" data-aos-delay="300">
+          <img src="img/Raj.png" style="width: 300px; height: 310px;" alt="self-photo">
+        </div>
+        <div class="about-col-2">
+          <h1 class="title-head">ABOUT ME</h1>
+          <p class="title-para">Saya membantu bisnis kecil membuat situs web yang indah dan merancang antarmuka yang mudah digunakan. Saya
+            terus meningkatkan keterampilan saya melalui kursus dan proyek. Saya menikmati front-end development dan
+            memiliki minat dalam desain grafis, animasi 3D, dan pengembangan aplikasi/game.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('edukasi')">Edukasi</p>
+
+          </div>
+          <div class="tab-contents tab-fix active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Front-end Developer</li>
+              <li><span>Design</span><br>Photoshop, Adobe Illustrator</li>
+              <li><span>Digital Artist</span><br>Blender </li>
+            </ul>
+          </div>
+          <div class="tab-contents tab-fix" id="edukasi">
+            <ul>
+              <li><span>2017</span><br>SMAK Santo Yoseph Denpasar</li>
+              <li><span>2020 - Current</span><br>FreeCodeCamp</li>
+              <li><span>2020 - Current</span><br>Informatika di Universitas Bali Internasional</li>
+            </ul>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+
+  <!------------PROJECT--------------->
   <section id="projects">
     <div class="container center">
-      <div class="col-md-12 blog-holder">
-        <h1 style="font-weight: bold;">Projects</h1> 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error sunt, neque voluptate aut, deleniti illo libero ipsa sequi sapiente, dignissimos modi eaque natus reprehenderit pariatur deserunt sed laudantium ipsam!</p>
+      <div class="col-md-12">
+        <h1 class="pro-head">PROJECTS</h1>
+        <p class="pro-paragraf"> Beberapa project yang sudah pernah saya kerjakan</p>
         <div class="row">
-            <!-- Blog Item -->
-            <div class="col-md-4 blog-item-wrapper" data-aos="fade-up">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <a href="#"><img src="#" alt="Informatics website"></a>
-                    </div>
-                    <div class="blog-text">
-                        
-                        <div class="blog-title">
-                            <a href="#"><h4>UNBI Informatics Website</h4></a>
-                        </div>
-                        
-                        <div class="blog-desc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi totam inventore nesciunt dolor, cumque aspernatur, quidem minus nisi itaque dolores, reiciendis voluptate iste ipsum? Provident maxime fuga labore temporibus minus. </p>
-                        </div>
-                        <div class="blog-author">
-                            <p>by Rajdev Dhillon</p>
-                        </div>
-                      
-                    </div>
+          <!--Project Item-->
+          <div class="col-md-4 project-item-wrapper" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-item">
+              <div class="project-img">
+                <a href="https://github.com/SapuLid1/Web_informatika"><img src="img/1.png" alt="Website Prodi Informatika"></a>
+              </div>
+              <div class="project-text">
+
+                <div class="project-title">
+
+                  <h5>Website Informatika</h5>
+
                 </div>
-            </div>
-            <!-- End of Blog Item -->
-          
-            <!-- Blog Item -->
-            <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="400">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <a href="#"><img src="#" alt="PT.Tanjung coconut oil website"></a>
-                    </div>
-                    <div class="blog-text">
-                        
-                        <div class="blog-title">
-                            <a href="#"><h4>Coconut Oil website</h4></a>
-                        </div>
-                       
-                        <div class="blog-desc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, officiis a corrupti cum pariatur sunt nihil accusantium quasi quibusdam consequatur sapiente fugiat odio qui. Possimus laudantium quas aliquid aperiam voluptate! </p>
-                        </div>
-                        <div class="blog-author">
-                            <p>by Rajdev Dhillon</p>
-                        </div>
-                       
-                    </div>
+
+                <div class="project-desc">
+                  <p>Saya adalah front-end developer untuk situs web informatika Universitas Bali Internasional. Website
+                    pertama di prodi informatika dari Universitas tersebut.</p>
                 </div>
+              </div>
             </div>
-            <!-- End of Blog Item -->
-             <!-- Blog Item -->
-             <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="400">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <a href="#"><img src="#" alt="youwillbe Scented website"></a>
-                    </div>
-                    <div class="blog-text">
-                        
-                        <div class="blog-title">
-                            <a href="#"><h4>Youwillbe Scented Candle</h4></a>
-                        </div>
-                       
-                        <div class="blog-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur commodi dicta tempore dignissimos adipisci natus, harum cupiditate deleniti libero quia corporis quasi odit delectus nisi itaque eos corrupti blanditiis. </p>
-                        </div>
-                        <div class="blog-author">
-                            <p>by Rajdev Dhillon</p>
-                        </div>
-                       
-                    </div>
+          </div>
+          <!--End of project item-->
+
+          <!--Project Item-->
+          <div class="col-md-4 project-item-wrapper" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-item">
+              <div class="project-img">
+                <a href="https://github.com/SapuLid1/Web_minyak"><img src="img/2.png" alt="Website Minyak"></a>
+              </div>
+              <div class="project-text">
+
+                <div class="project-title">
+
+                  <h5>PT. Tanjung Coconut Oil</h5>
+
                 </div>
+
+                <div class="project-desc">
+                  <p>PT. Tanjung Coconut Oil adalah perusahaan minyak kelapa yang saya dan tim saya kerjakan untuk
+                    mengembangkan sebuah situs web interaktif dan sederhana.</p>
+                </div>
+
+
+              </div>
             </div>
-            <!-- End of Blog Item -->
+          </div>
+          <!--End of project item-->
+
+          <!--Project Item-->
+          <div class="col-md-4 project-item-wrapper" data-aos="fade-up" data-aos-delay="800">
+            <div class="project-item">
+              <div class="project-img">
+                <a href="#github"><img src="img/3.png" alt="Website Scented Candles"></a>
+              </div>
+              <div class="project-text">
+
+                <div class="project-title">
+
+                  <h5>Scented Candles</h5>
+
+                </div>
+
+                <div class="project-desc">
+                  <p>Youwillbe Scented Candle adalah bisnis start-up yang menjual scented candles custom berdasarkan
+                    pesanan dan akan mengantarkannya ke pintu rumah Anda. </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--End of project item-->
         </div>
+      </div>
+      <!--End of project-->
     </div>
-    <!-- End of Blog -->
-    </div>
-    
+
   </section>
-<!-- 
-Awal dari Projects
+  <!--Akhir dari project-->
 
-    <section id="projects">
-      <div class="container">
-        <div class="center">
-          <div class="col-md-8">
-            <h1 style="font-weight: bold;">Projects</h1> 
+  <section id="contact">
+    <div class="container">
+
+      <!--Section heading-->
+      <h1 style="font-family: 'Market_Deco'; font-weight: bold;">CONTACT</h1>
+      <!--Section description-->
+      <p class="pro-paragraf">Silakan hubungi saya dengan mengisi formulir di bawah ini dan saya akan segera merespons
+        anda secepat mungkin.</p>
+
+      <div class="row container-edit contact-margin">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <!--Grid row-->
             <div class="row">
-              <p class="bawah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto quis tempore laboriosam nisi cupiditate ex hic iusto nemo, eligendi explicabo soluta at consequuntur. Eius modi ex inventore corrupti ratione.</p>
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Nama" required>
+                  <label for="nama"></label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="email" class="form-control" placeholder="Email" required>
+                  <label for="email"></label>
+                </div>
+              </div>
+              <!--Grid column-->
+
             </div>
-            <div class="container">
-              <div class="card left" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Kenalan</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Lebih dekat </h6>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto laudantium, impedit omnis delectus enim quos dolores debitis repudiandae quibusdam incidunt adipisci magni sint corporis illo quae, officia iste necessitatibus. Qui.</p>
-                  <a href="contact" class="card-link">Contact Me</a>
-                  </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                  <label for="subject"></label>
+                </div>
               </div>
-            </div> 
-            <div class="container">
-              <div class="card right" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Kenalan</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Lebih dekat </h6>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto laudantium, impedit omnis delectus enim quos dolores debitis repudiandae quibusdam incidunt adipisci magni sint corporis illo quae, officia iste necessitatibus. Qui.</p>
-                  <a href="contact" class="card-link">Contact Me</a>
-                  </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
+                    placeholder="Pesan Anda" required></textarea>
+                  <label for="message"></label>
+                </div>
+
               </div>
-            </div> 
-          </div>   
+            </div>
+            <!--Grid row-->
+          </form>
+
+          <div class="text-center text-md-left">
+           <button class="btn btn-default btn-rounded mb-4" onclick="document.getElementById('contact-form').submit();">Kirim</button> 
+          </div>
+          <div class="status"></div>
         </div>
+        <!--Grid column-->
+      
+      </div>
+      <div class="section-content pt-0">
+        <div class="title-wrap" data-aos="fade-up">
+            <h2 style="font-family: 'Dosis-Medium';">Dimana saya bisa ditemui?</h2>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-3" data-aos="fade-up">
+                <span class=" fs-40 py-4 d-block"></span>
+                <h4 class="konten-span">LOKASI</h4>
+                <p>Denpasar</p>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <span class="fs-40 py-4 d-block"></span>
+                <h4 class="konten-span">JAM OPERASIONAL</h4>
+                <p>Senin - Jumat</p>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                <span class=" fs-40 py-4 d-block"></span>
+                <h4 class="konten-span">PHONE/WHATSAPP</h4>
+                <p>+62-857-1888-5353</p>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                <span class=" fs-40 py-4 d-block"></span>
+                <h4 class="konten-span">EMAIL</h4>
+                <p>rajdevdhillon5@gmail.com</p>
+            </div>
+
+        </div>
+    </div>
+  </section>
+<br>
+<br>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-text">
+        <h3>Rajdev Dhillon</h3>
+        <p> Web developer yang berfokus pada frontend <br>
+          Membangun Website yang mengarah pada keindahan&kesuksesan produk secara keseluruhan.</p>
       </div>
 
-    </section>
-   
-    Awal dari Contact
-
-    <section id="contact">
-      <div class="container">
-        <div class="center">
-          <div class="col-md-8">
-            <h1 style="font-weight: bold;">Contact</h1> 
-            <div class="row">
-              <p class="bawah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto quis tempore laboriosam nisi cupiditate ex hic iusto nemo, eligendi explicabo soluta at consequuntur. Eius modi ex inventore corrupti ratione.</p>
-            </div>
-            <div class="container">
-              <div class="card left" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Kenalan</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Lebih dekat </h6>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto laudantium, impedit omnis delectus enim quos dolores debitis repudiandae quibusdam incidunt adipisci magni sint corporis illo quae, officia iste necessitatibus. Qui.</p>
-                  <a href="contact" class="card-link">Contact Me</a>
-                  </div>
-              </div>
-            </div> 
-            <div class="container">
-              <div class="card right" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Kenalan</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Lebih dekat </h6>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto laudantium, impedit omnis delectus enim quos dolores debitis repudiandae quibusdam incidunt adipisci magni sint corporis illo quae, officia iste necessitatibus. Qui.</p>
-                  <a href="contact" class="card-link">Contact Me</a>
-                  </div>
-              </div>
-            </div> 
-          </div>   
-        </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/rajdv.d/"><i class="fa-brands fa-instagram fa-beat-fade fa-2xl" style="color: black;"></i></a>
+        <a href="https://www.linkedin.com/in/rajdev-dhillon/"><i class="fa-brands fa-linkedin fa-beat-fade fa-2xl" style="color: black;"></i></a>
+        <a href="https://github.com/SapuLid1"><i class="fa-brands fa-github fa-beat-fade fa-2xl" style="color: black;"></i></a>
+        <a href="https://www.facebook.com/rajdev.dhillon"><i class="fa-brands fa-facebook fa-beat-fade fa-2xl" style="color:black;"></i></a>
       </div>
-    </section>
-   
-    -->
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2023. Made by <span class="designer">Raj.Dev</span> </p>
+    </div>
 
-   
- <!--Boostrap JS-->   
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--End of Boostrap JS-->
+  </footer>
+
+
+  <!--Boostrap JS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--End of Boostrap JS-->
+
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--end of AOS-->
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
 </body>
+
 </html>
