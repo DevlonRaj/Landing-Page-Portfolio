@@ -8,7 +8,7 @@
   <meta name="description"
     content="Seorang Web Developer yang berfokus pada Frontend dari Website yang mengarah pada kesuksesan produk secara keseluruhan." />
   <meta name="author" content="Rajdev Dhillon" />
-  <link rel="shortcut icon" href="assets/image/title.png" type="image/x-icon"> <!-- cek ulang-->
+  <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon"> <!-- cek ulang-->
   <!--CSS-->
   <link rel="stylesheet" href="css/style.css">
   <!--AOS-->
@@ -39,7 +39,7 @@
       </button>
       <div class="collapse navbar-collapse nav-text" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
+          <li class="nav-item"> 
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -204,16 +204,16 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
+          <form name="submit-to-google-sheet">
             <!--Grid row-->
             <div class="row">
 
               <!--Grid column-->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" id="name" name="name" class="form-control" placeholder="Nama" required>
-                  <label for="nama"></label>
+                  <input type="text" id="Name" name="Name" class="form-control" placeholder="Nama" required>
+                  <label for="name"></label>
                 </div>
               </div>
               <!--Grid column-->
@@ -221,7 +221,7 @@
               <!--Grid column-->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" id="email" name="email" class="form-control" placeholder="Email" required>
+                  <input type="text" id="Email" name="Email" class="form-control" placeholder="Email" required>
                   <label for="email"></label>
                 </div>
               </div>
@@ -234,7 +234,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                  <input type="text" id="Subject" name="Subject" class="form-control" placeholder="Subject" required>
                   <label for="subject"></label>
                 </div>
               </div>
@@ -248,21 +248,21 @@
               <div class="col-md-12">
 
                 <div class="md-form">
-                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
+                  <textarea type="text" id="message" name="Message" rows="2" class="form-control md-textarea"
                     placeholder="Pesan Anda" required></textarea>
-                  <label for="message"></label>
+                    <label for="message"></label>
                 </div>
 
               </div>
             </div>
             <!--Grid row-->
+            <div class="text-center text-md-left">
+              <button type="submit" class="btn btn-default btn-rounded mb-4">submit</button>
+            </div>
           </form>
-
-          <div class="text-center text-md-left">
-           <button class="btn btn-default btn-rounded mb-4" onclick="document.getElementById('contact-form').submit();">Kirim</button> 
-          </div>
-          <div class="status"></div>
+          <span id="pesan"></span>
         </div>
+
         <!--Grid column-->
       
       </div>
@@ -338,6 +338,25 @@
   </script>
   <!--end of AOS-->
 
+  <!--active link on nav-->
+  <script>
+    const links = document.querySelectorAll('.nav-link');
+    
+    if (links.length) {
+      links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          links.forEach((link) => {
+              link.classList.remove('active');
+          });
+         
+          link.classList.add('active');
+        });
+      });
+    }
+  </script>
+  <!--end of active link on nav-->
+
+<!--About me tab contents JS-->
   <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -351,6 +370,27 @@
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
     }
+  </script>
+  <!--end if tab contents-->
+
+  <!--contact form JS-->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwc9puvS7iiF3lZ-6RzVspNdizcBsaCjFm3iVjIP9dYDz12fb1DdY0V7M7jXF_mifNP/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const pesan = document.getElementById("pesan")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          pesan.innerHTML = "Pesan terkirim!"
+          setTimeout(function(){
+            pesan.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 
